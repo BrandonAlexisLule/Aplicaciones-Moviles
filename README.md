@@ -2,7 +2,11 @@
 
 En este repositorio se subirán todos los proyectos en flutter de la materia Desarrollo de Aplicaciones Móviles Híbridas del semestre Enero-Junio 2025
 
-## Subir cambios a Github
+## Instalación de Flutter.
+
+(Documentación pendiente).
+
+## Subir cambios a Github.
 
 1. INICIALIZA repositorio con ```git init```. En cada paso PRESIONA la tecla ENTER después de poner algún comando para que se guarden los cambios y se pueda continuar.
 2. REVISA con ```git status``` que aún no tenemos nada subido, las letras en color rojo indican que son los archivos que aún no se han subido.
