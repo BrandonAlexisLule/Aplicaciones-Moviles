@@ -57,5 +57,19 @@ To https://github.com/nombre_usuario/nombre_repositorio.git
    6011bba..211e63f  main -> main
 branch 'main' set up to track 'origin/main'.
 ```
+## Clonar un repositorio
+
+Al crear un repositorio, existe como un repositorio remoto. Puedes clonar tu repositorio para crear una copia local en tu computadora y sincronizarla entre las dos
+ubicaciones.
+
+### Pasos para clonar un repositorio
+
+1. En el sitio de Github, abre el repositorio que deseas clonar, y arriba de la lista de archivos está un botón de color verde que dice ```<>Code```.
+2. Te va a aparecer el link(url) de tu repositorio, y lo copias en el portapapeles.
+3. Posteriormente abre la terminal en Git Bash o VSCode
+4. Ubica la carpeta en la que quieres que se clone el repositorio.
+5. Luego ingresas el siguiente comando de clonación ```git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY```
+6. Se te habrá copiado todo el repositorio.
+
 
 
