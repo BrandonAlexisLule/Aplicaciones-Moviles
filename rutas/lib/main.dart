@@ -4,11 +4,11 @@ import 'package:rutas/screens/product_detail.dart';
 import 'package:rutas/screens/shopping_cart.dart';
 
 void main() {
-  runApp(const MainApp(pasteles: []));
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key, required List pasteles});
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
