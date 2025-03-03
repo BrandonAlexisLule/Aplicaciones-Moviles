@@ -19,4 +19,5 @@ flutter:
   uses-material-design: true
   assets:
    - assets/data/pasteleria.json
+   - assets/img/
 
