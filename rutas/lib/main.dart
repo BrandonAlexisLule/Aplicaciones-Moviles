@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rutas/screens/NewHomePage.dart';
 import 'package:rutas/screens/home_page.dart';
 import 'package:rutas/screens/product_detail.dart';
 import 'package:rutas/screens/shopping_cart.dart';
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
     //en main.dart
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Newhomepage(),
       //no es obligatorio ponerle en la ruta homepage, puede ser el nombre que sea, se ocupa para despúes que vamos a 
       routes: {
         '/homepage': (context)=>HomePage(),

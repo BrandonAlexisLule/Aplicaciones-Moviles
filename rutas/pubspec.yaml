@@ -18,6 +18,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-   - assets/data/pasteleria.json
+   - lib/data/pasteleria.json
    - assets/img/
 
