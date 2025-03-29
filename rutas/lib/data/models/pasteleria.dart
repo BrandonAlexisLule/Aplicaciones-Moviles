@@ -9,7 +9,7 @@ Future<List<Pastel>> cargarPastel() async {
   //Nombramos una variable respuesta que va a recibir la lectura del archivo JSON.
   final String respuesta = await rootBundle.loadString('../lib/data/pasteleria.json'); 
   final Map<String, dynamic> data = jsonDecode(respuesta);
-  
+    
 
   List<dynamic> pastelJson = data['pasteles'];
   List<Pastel> pasteles = pastelJson.map((pastel) => Pastel.fromJSON(pastel)).toList();

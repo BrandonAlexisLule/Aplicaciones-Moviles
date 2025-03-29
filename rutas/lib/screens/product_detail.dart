@@ -36,7 +36,7 @@ class ProductDetail extends StatelessWidget {
             ElevatedButton(
               onPressed: (()=>{
                 //ir a la página de inicio, cambiamos routeName por un string y ponemos la ruta '/nombre_variable'
-                  Navigator.pushNamed(context, '/homepage'),
+                  Navigator.pushNamed(context, '/newhomepage'),
               }), child: Text('Regresar'), 
             ),
           ],

@@ -3,61 +3,61 @@
       {
         "nombre": "Pastel de Chocolate",
         "descripcion": "Delicioso pastel de chocolate con cobertura de ganache y decorado con chispas de chocolate.",
-        "precio": 15.99,
-        "imagen": "https://peopleenespanol.com/thmb/8_0BHEJkXcIbYVOu9r2Z1ntoonc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/3a23ae4b-48b7-44eb-96a7-0e8e755683b6-2000-c618f18c242d47ca89eaddea62579593.jpg"
+        "precio": 145,
+        "imagen": "https://www.dolci.com.mx/cdn/shop/files/pastel-chocolate-dolci.jpg?v=1711133660"
       },
       {
         "nombre": "Pastel de Fresas con Crema",
         "descripcion": "Pastel esponjoso relleno de crema batida y fresas frescas, cubierto con glaseado de vainilla.",
-        "precio": 18.50,
+        "precio": 200,
         "imagen": "https://www.bettycrocker.lat/mx/wp-content/uploads/sites/2/2023/04/Strawberry-Frosted-Layer-Cake.jpg"
       },
       {
         "nombre": "Cheesecake de Frambuesa",
         "descripcion": "Pastel de queso cremoso con base de galleta y cubierta de salsa de frambuesa.",
-        "precio": 20.75,
+        "precio": 175,
         "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4DVk0i3EfH6Jz8bXaIpUPLBkPvFUH5ESvTg&s"
       },
       {
         "nombre": "Pastel de Zanahoria",
         "descripcion": "Bizcocho de zanahoria con nueces y especias, cubierto con glaseado de queso crema.",
-        "precio": 17.25,
+        "precio": 120,
         "imagen": "https://mrpay.com.mx/cdn/shop/files/Untitled-2-09_grande.jpg?v=1720223658"
       },
       {
         "nombre": "Pastel Tres Leches",
         "descripcion": "Pastel esponjoso bañado en una mezcla de tres leches y cubierto con merengue.",
-        "precio": 16.99,
+        "precio": 190,
         "imagen": "https://i0.wp.com/thesweetmolcajete.com/wp-content/uploads/2020/06/WPRM-Receta-de-Pastel-de-Tres-Leches.jpg?fit=733%2C733&ssl=1"
       },
       {
         "nombre": "Pastel Red Velvet",
         "descripcion": "Suave pastel rojo con un toque de cacao, relleno y cubierto con crema de queso.",
-        "precio": 19.50,
-        "imagen": "https://www.infobae.com/resizer/v2/52E6H6YM2NHAHHAR6S7SL47SEM.jpg?auth=297e571a58ee99c362d9f16fab0b2dafa6ffba5a019ccd898a7c4741312ce74f&smart=true&width=1200&height=630&quality=85"
+        "precio": 145,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS347rpCeZ3_DPmVb--bqfPu7QRH9sWDwy9wQ&s"
       },
       {
         "nombre": "Pastel de Mango",
         "descripcion": "Pastel relleno de crema de mango, decorado con trozos de mango fresco.",
-        "precio": 18.99,
-        "imagen": "https://www.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2024/06/pastel-helado-mango.jpg"
+        "precio": 181,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdQ_jTpGsqRHEfvnv779jNm-OZRPebSGpF2w&s"
       },
       {
         "nombre": "Pastel de Coco",
         "descripcion": "Pastel esponjoso de coco con relleno de crema de coco y cobertura de coco rallado.",
-        "precio": 17.80,
-        "imagen": "https://i.pinimg.com/736x/01/79/92/0179929ad7b48e8463e7632915a8667d.jpg"
+        "precio": 173,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiv9Geg7ygjtRzpx_VS2sU7EtmFbFhkgnMsA&s"
       },
       {
         "nombre": "Pastel de Almendra",
         "descripcion": "Bizcocho de almendra con un toque de vainilla, cubierto con glaseado de almendra.",
-        "precio": 21.30,
-        "imagen": "https://kitchenfair.com.mx/wp-content/uploads/2020/11/pastel-de-almendras1.jpg"
+        "precio": 211,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wrpzX_KDKMEVXhZ_nbu5vzSJE11Fu-I2-g&s"
       },
       {
         "nombre": "Tarta de Manzana",
         "descripcion": "Tarta con relleno de manzana caramelizada y una crujiente base de hojaldre.",
-        "precio": 14.99,
+        "precio": 151,
         "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRloIoacXZfK2RjlQwkVNAUnkCJsEmteoIGg&s"
       }
     ]

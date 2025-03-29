@@ -26,8 +26,10 @@ class InputPersonalizado extends StatelessWidget {
       keyboardType: TextInputType.text,        
       decoration: InputDecoration(
         
+        
         hintText: hintText,
         iconColor: iconColor,
+
         //label: Text('Cual es tu nombre')
         labelText: labelText,
         helper: Text('Este campo no se te olvide escribirlo bien'),

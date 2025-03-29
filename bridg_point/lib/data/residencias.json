@@ -1,0 +1,142 @@
+[
+  {
+    "imagen": "lib/images/3m.jpg",
+    "nombre": "3M Ensenada",
+    "direccion": "Carretera Tijuana-Ensenada Km 104, El Sauzal, 22760 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 8:00 a.m. a 5:00 p.m.",
+    "contacto": {
+      "correo": "contacto@3mensenada.com",
+      "telefono": "+52 646 174 5000"
+    },
+    "actividades": {
+      "ingenieria_industrial": "Participación en la administración de documentación y desarrollo de ingeniería para nuevos productos.",
+      "ingenieria_en_mecatronica": "Soporte en la implementación de técnicas de manufactura esbelta y mejora de procesos productivos."
+    }
+  },
+  {
+    "imagen": "lib/images/hutson.png",
+    "nombre": "Hutchinson Seal de México, S.A. de C.V.",
+    "direccion": "Calle Novena #131, Zona Centro, 22800 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 9:00 a.m. a 6:00 p.m.",
+    "contacto": {
+      "correo": "recursoshumanos@hutchinson.com.mx",
+      "telefono": "+52 646 176 2600"
+    },
+    "actividades": {
+      "ingenieria_industrial": "Creación de instrucciones de trabajo y seguimiento a actividades asignadas por el departamento de ingeniería.",
+      "ingenieria_en_sistemas_computacionales": "Desarrollo y actualización de bases de datos internas para optimizar procesos."
+    }
+  },
+  {
+    "imagen": "lib/images/fortune.jpg",
+    "nombre": "Fortune Fashions Baja S. de R.L. de C.V.",
+    "direccion": "Blvd. Zertuche #647, El Sauzal, 22760 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 8:00 a.m. a 5:30 p.m.",
+    "contacto": {
+      "correo": "hr@fortunefashions.com",
+      "telefono": "+52 646 175 4500"
+    },
+    "actividades": {
+      "ingenieria_industrial": "Supervisión y mantenimiento de sistemas como PLC's, drivers y motores eléctricos.",
+      "ingenieria_en_mecatronica": "Implementación de tecnología avanzada en procesos de manufactura."
+    }
+  },
+  {
+    "imagen": "lib/images/elite.png",
+    "nombre": "Elite Manufacturing S de R.L. De C.V.",
+    "direccion": "Carretera Transpeninsular Km 108, El Sauzal, 22760 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 8:00 a.m. a 5:00 p.m.",
+    "contacto": {
+      "correo": "empleos@elite.com.mx",
+      "telefono": "+52 646 174 3800"
+    },
+    "actividades": {
+      "ingenieria_industrial": "Elaboración, actualización e implementación de procesos de producción.",
+      "ingenieria_en_sistemas_computacionales": "Optimización de sistemas de control y monitoreo de producción."
+    }
+  },
+  {
+    "imagen": "lib/images/augen.jpg",
+    "nombre": "Augen Ópticos",
+    "direccion": "Av. Reforma #1234, Zona Centro, 22800 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 9:00 a.m. a 6:00 p.m.",
+    "contacto": {
+      "correo": "rrhh@augenopticos.com",
+      "telefono": "+52 646 178 9000"
+    },
+    "actividades": {
+      "licenciatura_en_administracion": "Supervisión de actividades del personal de mantenimiento industrial y aplicación de tecnología de punta en productos ópticos.",
+      "ingenieria_industrial": "Implementación de programas de seguridad e higiene en planta."
+    }
+  },
+  {
+    "imagen": "lib/images/sempra.jpg",
+    "nombre": "Sempra Infrastructure",
+    "direccion": "Blvd. Costero #2000, Zona Centro, 22800 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 8:00 a.m. a 5:00 p.m.",
+    "contacto": {
+      "correo": "contacto@sempra.com",
+      "telefono": "+52 646 175 3000"
+    },
+    "actividades": {
+      "ingenieria_industrial": "Recopilación y análisis de datos para la inspección basada en riesgo de activos.",
+      "ingenieria_en_sistemas_computacionales": "Gestión de bases de datos en software especializado para análisis de riesgos."
+    }
+  },
+  {
+    "imagen": "lib/images/bajaveg.png",
+    "nombre": "BAJAVEG",
+    "direccion": "Carretera Ensenada-Tecate Km 10, Valle de Guadalupe, 22750 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 7:00 a.m. a 4:00 p.m.",
+    "contacto": {
+      "correo": "info@bajaveg.com",
+      "telefono": "+52 646 155 2000"
+    },
+    "actividades": {
+      "innovacion_agricola": "Asistencia en la gestión de cultivos y aplicación de técnicas agrícolas innovadoras.",
+      "ingenieria_industrial": "Optimización de procesos de producción agrícola."
+    }
+  },
+  {
+    "imagen": "lib/images/lowrance.png",
+    "nombre": "Electrónica Lowrance de México, S.A. de C.V.",
+    "direccion": "Calle Novena #456, Zona Centro, 22800 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 8:00 a.m. a 5:30 p.m.",
+    "contacto": {
+      "correo": "recursos.humanos@lowrance.com.mx",
+      "telefono": "+52 646 176 2700"
+    },
+    "actividades": {
+      "ingenieria_en_sistemas_computacionales": "Actualización de bases de datos y soporte en sistemas internos.",
+      "licenciatura_en_administracion": "Apoyo en el departamento de recursos humanos y gestión de personal."
+    }
+  },
+  {
+    "imagen": "lib/images/orlando.jpg",
+    "nombre": "Grupo Orlando's",
+    "direccion": "Av. Juárez #789, Zona Centro, 22800 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Viernes de 9:00 a.m. a 6:00 p.m.",
+    "contacto": {
+      "correo": "contacto@grupoorlandos.com",
+      "telefono": "+52 646 178 5678"
+    },
+    "actividades": {
+      "licenciatura_en_administracion": "Gestión de inventarios, apoyo en contabilidad y administración de personal.",
+      "ingenieria_en_sistemas_computacionales": "Implementación y mantenimiento de software para la gestión de operaciones del grupo."
+    }
+  },
+  {
+    "imagen": "lib/images/cetto.png",
+    "nombre": "Vinos L.A. Cetto",
+    "direccion": "Carretera Ensenada-Tecate Km 73, Valle de Guadalupe, 22750 Ensenada, B.C.",
+    "horario_de_atencion": "Lunes a Sábado de 8:00 a.m. a 6:00 p.m.",
+    "contacto": {
+      "correo": "info@lacetto.com",
+      "telefono": "+52 646 155 2264"
+    },
+    "actividades": {
+      "innovacion_agricola": "Manejo de cultivos vitivinícolas y desarrollo de nuevas técnicas de producción.",
+      "ingenieria_industrial": "Optimización de procesos de producción y logística en la bodega."
+    }
+  }
+]

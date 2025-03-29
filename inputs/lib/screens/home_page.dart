@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inputs/widgets/input_personalizado.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,50 +26,47 @@ class _HomePageState extends State<HomePage> {
   List<dynamic> numeros = [1, 2, 3, 4, 5, '6'];
   List<Widget> widgets = [Text('hola1'), Text('Hola2')];
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.amber,
-        centerTitle: true,
-        title: Text('Lista con animales y sus nombres'),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(0),
-        child: ListView.builder(
-          // itemCount: Toma el tamaño de la lista
-          itemCount: animales.length,
-        
-          //itemCount: Define como se va a construir cada elemento de la lista 
-          itemBuilder: (context, index){
-            return Padding(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
               padding: EdgeInsets.all(10),
-              child: ListTile(
-                //Content padding: Agrega Padding Interno
-                contentPadding: EdgeInsets.all(20),
-                tileColor: Colors.grey[200],
-                trailing: Icon(Icons.arrow_forward_ios, color: Colors.blue[600]),
-                leading: Image.asset(imagenesPersonalizadas[index], width: 50, height: 50, fit: BoxFit.cover),
-                title: Text(animales[index]),
-                titleTextStyle: TextStyle(fontSize: 30, color: Colors.blue[600]),
-                onTap: () {
-                  
-                },
-                shape: RoundedRectangleBorder(               
-                  borderRadius: BorderRadius.circular(5),
-                  
-                ),
+              child: InputPersonalizado(
+                labelText: 'Dirección',              
+                hintText: 'Escribe tu dirección',
+                iconColor: Colors.red,
+                icono: Icons.home,
+                suffixIcon: Icons.remove_red_eye_sharp,
               ),
-            );
-            
-          },
 
+            ),
+            
+            InputPersonalizado(
+              labelText: 'Nombre',
+              hintText: 'Escribe tu nombre',
+              iconColor: Colors.red,
+              icono: Icons.home,
+              suffixIcon: Icons.remove_red_eye_sharp,
+            ),
+
+            InputPersonalizado(
+              labelText: 'Teléfono',
+              hintText: 'Número de teléfono',
+              iconColor: Colors.red,
+              icono: Icons.home,
+              suffixIcon: Icons.remove_red_eye_sharp,
+              keyboardType: TextInputType.number,
+            ),
+            
+          ],
         ),
-      )
-      );
-  }
+      ),
+    );
+  }  
+
+
 }
 

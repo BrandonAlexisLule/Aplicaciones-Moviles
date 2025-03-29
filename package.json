@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-capacitor",
+  "version": "1.0.0",
+  "description": "En este repositorio se subirán todos los proyectos en flutter de la materia Desarrollo de Aplicaciones Móviles Híbridas del semestre Enero-Junio 2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonAlexisLule/Aplicaciones-Moviles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonAlexisLule/Aplicaciones-Moviles/issues"
+  },
+  "homepage": "https://github.com/BrandonAlexisLule/Aplicaciones-Moviles#readme",
+  "dependencies": {
+    "@capacitor/android": "^7.1.0",
+    "@capacitor/core": "^7.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.1.0"
+  }
+}

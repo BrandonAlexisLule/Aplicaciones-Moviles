@@ -17,10 +17,11 @@ class MainApp extends StatelessWidget {
     //en main.dart
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Newhomepage(),
+      home: HomePage(),
       //no es obligatorio ponerle en la ruta homepage, puede ser el nombre que sea, se ocupa para despúes que vamos a 
       routes: {
         '/homepage': (context)=>HomePage(),
+        '/newhomepage': (context)=>Newhomepage(),
         '/product_detail': (context)=>ProductDetail(),
         '/shopping-cart': (context)=>ShoppingCart(),
       }
