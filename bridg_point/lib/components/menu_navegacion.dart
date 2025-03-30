@@ -21,6 +21,7 @@ class MenuNavegacion extends StatelessWidget {
           ]
         ),
         child: BottomNavigationBar(
+          backgroundColor: Color(0xfff4f4f4),
           //llamamos a la propiedad currentIndex para definir que pestaña es la que se encuentra activa
           currentIndex: navProvider.paginaIndice,
         

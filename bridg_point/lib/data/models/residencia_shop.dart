@@ -16,9 +16,15 @@ class ResidenciaShop extends ChangeNotifier {
 
   //Método para cargar residencias desde el JSON
   Future<void> cargarResidencia() async {
-    _shop = await cargarResidenciaDesdeJson();
-    notifyListeners();
-  } 
+    try {
+      List<Residencia> data = await cargarResidenciaDesdeJson();
+      print('Residencias cargadas: ${data.length}'); // 👀 Ver cuántos datos se cargaron
+      _shop = data;
+      notifyListeners();
+    } catch (e) {
+      print('Error cargando residencias: $e'); // 🛑 Captura errores
+    }
+  }
 
 
   void addItemToCard(Residencia residencia){

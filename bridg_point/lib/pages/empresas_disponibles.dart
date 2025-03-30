@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class EmpresasDisponibles extends StatefulWidget {
+  
   const EmpresasDisponibles({super.key});
 
   @override
@@ -12,6 +13,15 @@ class EmpresasDisponibles extends StatefulWidget {
 }
 
 class _EmpresasDisponiblesState extends State<EmpresasDisponibles> {
+
+  @override
+  void initState() {
+  super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Provider.of<ResidenciaShop>(context, listen: false).cargarResidencia();
+  });
+}
+
   //Agregar al carrito
   void addToCart(Residencia residencia){
     Provider.of<ResidenciaShop>(context, listen: false).addItemToCard(residencia);
@@ -21,34 +31,41 @@ class _EmpresasDisponiblesState extends State<EmpresasDisponibles> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent[100],
+        backgroundColor: Color(0xfff4f4f4),
         title: Text('Empresas disponibles'),
         centerTitle: true,
       ),
-      body: Consumer<ResidenciaShop>(
-        builder: (context, value, child) => SafeArea(
-          child: Padding(
-            padding: EdgeInsets.all(10),
-            child: Column(
-              children: [
-                Text('Vacantes para residencias disponibles'),
-                Expanded(
-                  child: value.residenciaShop.isEmpty ? 
-                  Center(
-                    child: CircularProgressIndicator()) : 
-                    ListView.builder(
-                      itemCount: value.residenciaShop.length,
-                      itemBuilder: (context, index) {
-                        Residencia residencia = value.residenciaShop[index];
-                        return ResidenciaTile(
-                          residencia: residencia, 
-                          onPressed: () => addToCart(residencia),
-                          addRemoveIcon: Icon(Icons.add_circle),        
-                        );
-                      }
+      body: Container(
+        color: Colors.white,
+        child: Consumer<ResidenciaShop>(
+          builder: (context, value, child) => 
+          SafeArea(
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(15),
+                    child: Text('Vacantes para residencias disponibles', style: TextStyle(fontSize: 20),)
+                  ),
+                  Expanded(
+                    child: value.residenciaShop.isEmpty ? 
+                    Center(
+                      child: CircularProgressIndicator()) : 
+                      ListView.builder(
+                        itemCount: value.residenciaShop.length,
+                        itemBuilder: (context, index) {
+                          Residencia residencia = value.residenciaShop[index];
+                          return ResidenciaTile(
+                              residencia: residencia, 
+                              onPressed: () => addToCart(residencia),
+                              addRemoveIcon: Icon(Icons.add_circle),        
+                          );
+                        }
+                      ),
                     ),
-                  )
-              ],
+                ],
+              ),
             ),
           ),
         ),

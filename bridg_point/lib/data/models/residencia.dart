@@ -3,20 +3,26 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-
 Future<List<Residencia>> cargarResidenciaDesdeJson() async {
-  //Cargar el archivo JSON
-  final String respuesta = await rootBundle.loadString('assets/data/residencias.json');
-  
+  try {
+    // Cargar el archivo JSON
+    final String respuesta = await rootBundle.loadString('assets/residencias.json');
+    
+    print('Contenido del JSON: $respuesta'); // 👀 Ver el contenido real
+    
+    // Decodificar el JSON
+    final List<dynamic> data = jsonDecode(respuesta);
+    List<Residencia> residencias = data.map((residencia) => Residencia.fromJSON(residencia)).toList();
+    
+    print('Cantidad de residencias cargadas: ${residencias.length}'); 
 
-  //Decodificar el JSON como una lista de mapas
-  final List<dynamic> data = jsonDecode(respuesta);
-
-  //Convertir la lista en una lista de objetos residencia
-  List<Residencia> residencias = data.map((residencia) => Residencia.fromJSON(residencia)).toList();
-
-  return residencias;
+    return residencias;
+  } catch (e) {
+    print('Error al cargar el JSON: $e'); 
+    return [];
+  }
 }
+
 
 class Residencia {
   final String imagen;
@@ -37,19 +43,18 @@ class Residencia {
     required this.actividades
   });
 
-  factory Residencia.fromJSON(Map<String, dynamic> json){
-
-    //Regresamos el constructor Residencia
+  factory Residencia.fromJSON(Map<String, dynamic> json) {
     return Residencia(
-        imagen: json['imagen'], 
-        nombre: json['nombre'], 
-        direccion: json['direccion'], 
-        horarioDeAtencion: json['horarioDeAtencion'],
-        correo: json['contacto']['correo'], 
-        telefono: json['contacto']['telefono'], 
-        actividades: Map<String, String>.from(json['actividades']) //convertido a Map<String, String>
+      imagen: json['imagen'] ?? '', 
+      nombre: json['nombre'] ?? 'Sin nombre', 
+      direccion: json['direccion'] ?? 'Sin dirección', 
+      horarioDeAtencion: json['horario_de_atencion'] ?? 'No disponible', 
+      correo: json['contacto']?['correo'] ?? '', // Manejo de nulos en contacto
+      telefono: json['contacto']?['telefono'] ?? '', 
+      actividades: json['actividades'] != null 
+          ? Map<String, String>.from(json['actividades']) 
+          : {}, // Si actividades es null, asignamos un mapa vacío
     );
   }
-
 }
 

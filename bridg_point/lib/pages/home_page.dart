@@ -19,6 +19,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class _HomePage extends StatelessWidget {
   ActualizarNavegacionProvider value;
 

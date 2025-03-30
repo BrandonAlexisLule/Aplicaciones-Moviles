@@ -9,7 +9,7 @@ class Inicio extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home Page'),
         centerTitle: true,
-        backgroundColor: Colors.lightBlueAccent[100],
+        backgroundColor: Color(0xfff4f4f4),
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 10),
