@@ -36,7 +36,7 @@ class _EmpresasDisponiblesState extends State<EmpresasDisponibles> {
         centerTitle: true,
       ),
       body: Container(
-        color: Colors.white,
+        color: Color(0xfff4f4f4),
         child: Consumer<ResidenciaShop>(
           builder: (context, value, child) => 
           SafeArea(
@@ -44,10 +44,6 @@ class _EmpresasDisponiblesState extends State<EmpresasDisponibles> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Container(
-                    margin: EdgeInsets.all(15),
-                    child: Text('Vacantes para residencias disponibles', style: TextStyle(fontSize: 20),)
-                  ),
                   Expanded(
                     child: value.residenciaShop.isEmpty ? 
                     Center(

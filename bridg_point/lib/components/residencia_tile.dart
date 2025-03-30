@@ -48,7 +48,10 @@ class ResidenciaTile extends StatelessWidget{
                     ),
                   );
                 }, 
-                child: Text('Más información', style: TextStyle(color: Colors.black),)),
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.grey[600],
+                ),
+                child: Text('Más información', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),)),
               ),
             ],
           ),
