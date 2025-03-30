@@ -53,12 +53,20 @@ class DetallesEmpresa extends StatelessWidget {
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(5)
                       ),         
-                      child: Icon(Icons.business_center, color: Colors.white)
+                      child: Row(
+                        children: [
+                          Icon(Icons.business_center, color: Colors.white),
+                        ],
+                      ),
                     ),
-                    Text('Empresa: ', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                    Text(residencia.nombre, style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal)),
+                    Text('Empresa: ', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),                    
                   ],
                 ),
+                
+                //Separamos la información para que se muestre por debajo del ícono y el texto.
+                Text(residencia.nombre, style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal)),
+                
+                  
                 Divider(),
                 Row(
                   children: [
@@ -91,20 +99,11 @@ class DetallesEmpresa extends StatelessWidget {
                   ],
                 ),
                 Divider(),
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(6),
-                      padding: EdgeInsets.all(3),
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple,
-                        borderRadius: BorderRadius.circular(5)
-                      ),
-                      child: Icon(Icons.person_2_rounded, color: Colors.white) 
-                    ),  
-                    Text('Contacto:', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))
-                  ],
-                ),
+                
+
+                Text('Contacto:', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+
+                
                 Row(
                   children: [
                     Container(

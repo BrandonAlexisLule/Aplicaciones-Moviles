@@ -23,4 +23,4 @@ flutter:
   uses-material-design: true
   assets:
     - lib/images/
-    - assets/residencias.json
+    - lib/data/residencias.json

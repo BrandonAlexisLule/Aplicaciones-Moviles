@@ -35,10 +35,6 @@ class _EmpresasAgregadasState extends State<EmpresasAgregadas> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Container(
-                    margin: EdgeInsets.all(15),
-                    child: Text('Vacante agregada', style: TextStyle(fontSize: 20),)
-                  ),
                   Expanded(
                     child: ListView.builder(
                       itemCount: value.userCart.length,

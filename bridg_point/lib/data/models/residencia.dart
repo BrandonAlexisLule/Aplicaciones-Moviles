@@ -6,19 +6,16 @@ import 'package:flutter/services.dart';
 Future<List<Residencia>> cargarResidenciaDesdeJson() async {
   try {
     // Cargar el archivo JSON
-    final String respuesta = await rootBundle.loadString('assets/residencias.json');
-    
-    print('Contenido del JSON: $respuesta'); // 👀 Ver el contenido real
+    final String respuesta = await rootBundle.loadString('lib/data/residencias.json');
     
     // Decodificar el JSON
     final List<dynamic> data = jsonDecode(respuesta);
     List<Residencia> residencias = data.map((residencia) => Residencia.fromJSON(residencia)).toList();
-    
-    print('Cantidad de residencias cargadas: ${residencias.length}'); 
+
 
     return residencias;
   } catch (e) {
-    print('Error al cargar el JSON: $e'); 
+
     return [];
   }
 }
