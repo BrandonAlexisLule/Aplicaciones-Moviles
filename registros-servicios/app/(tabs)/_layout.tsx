@@ -14,7 +14,7 @@ export default function RootLayout() {
 
     if(!focused){
       return (
-        <View className="flex flex-row flex-1 min-w-[112px] min-h-16 justify-center items-center bg-[#0f0d23] mt-4 rounded-l-lg overflow-hidden">
+        <View className="flex flex-row flex-1 min-w-[112px] min-h-16 justify-center items-center bg-[#0f0d23] mt-4 rounded-ms overflow-hidden">
           <Ionicons name={iconName} size={30} color='#a8b5bd' />
           <Text className="text-white">{title}</Text>
         </View>
@@ -22,7 +22,7 @@ export default function RootLayout() {
     }
 
     return (
-      <View className='flex flex-row flex-1 min-w-[112px] min-h-16 justify-center items-center bg-secondary mt-4 rounded-l-lg overflow-hidden'>
+      <View className='flex flex-row flex-1 min-w-[112px] min-h-16 justify-center items-center bg-secondary mt-4 rounded-ms overflow-hidden'>
         <Ionicons  name={iconName} size={30} color={'white'} />
         <Text className="text-white">{title}</Text>
       </View>
@@ -57,6 +57,7 @@ export default function RootLayout() {
     <Tabs.Screen 
       name="index"
       options={{
+    headerShown: false,
         title: 'Home',
         tabBarIcon: ({ focused } : TabBarIconInterface ) => (
           <TabBarIcon
@@ -69,6 +70,7 @@ export default function RootLayout() {
     <Tabs.Screen
       name="search"
       options={{
+        headerShown: false,
         title: 'Search',
         tabBarIcon: ({ focused } : TabBarIconInterface) => (
           <TabBarIcon
@@ -81,6 +83,7 @@ export default function RootLayout() {
     <Tabs.Screen
       name="saved"
       options={{
+        headerShown: false,
         title: 'Saved',
         tabBarIcon: ({ focused } : TabBarIconInterface) => (
           <TabBarIcon
@@ -93,6 +96,7 @@ export default function RootLayout() {
     <Tabs.Screen
       name="profile"
       options={{
+        headerShown: false,
         title: 'Profile',
         tabBarIcon: ({ focused } : TabBarIconInterface) => (
           <TabBarIcon
