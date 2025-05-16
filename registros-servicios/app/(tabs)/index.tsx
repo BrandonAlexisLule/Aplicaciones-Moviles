@@ -28,7 +28,10 @@ export default function Onboarding() {
   
   return (
     <View className='flex-1 bg-primary'>
-      <Image source={headerImage} className='absolute w-full z-0 '/>
+      <View>
+        <Image source={headerImage} className='absolute w-full z-0 '/>
+      </View>
+      
       <ScrollView className='flex-1 px-5'
         showsVerticalScrollIndicator={false} 
         contentContainerStyle={{
@@ -56,7 +59,7 @@ export default function Onboarding() {
             
             />
 
-
+{/**kurzor */}
             <>
               <Text className='text-4xl text-white my-5'>Latest Movies</Text>
               <FlatList 

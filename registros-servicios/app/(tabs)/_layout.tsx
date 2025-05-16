@@ -27,7 +27,6 @@ export default function RootLayout() {
         <Text className="text-white">{title}</Text>
       </View>
     )
-
   }
 
   
@@ -57,7 +56,7 @@ export default function RootLayout() {
     <Tabs.Screen 
       name="index"
       options={{
-    headerShown: false,
+        headerShown: false,
         title: 'Home',
         tabBarIcon: ({ focused } : TabBarIconInterface ) => (
           <TabBarIcon

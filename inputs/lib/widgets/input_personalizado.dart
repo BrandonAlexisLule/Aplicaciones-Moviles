@@ -9,7 +9,7 @@ class InputPersonalizado extends StatelessWidget {
   final IconData suffixIcon;
   final TextInputType keyboardType;
   
-
+  //constructor
   const InputPersonalizado({
     required this.labelText,
     required this.icono,

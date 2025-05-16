@@ -3,8 +3,6 @@ import React from 'react'
 import { Movies } from '@/interfaces/interfaces'
 import { Link } from 'expo-router'
 
-
-
 //Detalles a necesitar
 const MovieCard = ({
   id, 
@@ -36,26 +34,23 @@ const MovieCard = ({
         poster_path,
         overview,
         vote_average,
-        release_date
+        release_date,
       }}} 
       asChild>
     <TouchableOpacity
          style={{ width: '30%' }} className="m-1"
       onPress={() => {
         console.log({title})
+      }}>
 
-      }}
-
-    >
-      
-    <View className='w-[100%] h-[300px] mt-16 rounded-lg'>
-        <Image
-            source={{uri : imageURL}}
-            className='w-full h-[150px] rounded-md my-2'/>
-        <Text className='text-white text-xl'>{title}</Text>
-        <Text className='text-white text-xl'>⭐ {vote_average}</Text>
-        <Text className='text-white text-xl'>{formattedDate}</Text>
-    </View>
+      <View className='w-[100%] h-[300px] mt-2 rounded-lg'>
+          <Image
+              source={{uri : imageURL}}
+              className='w-full h-[150px] rounded-md my-2'/>
+          <Text className='text-white text-xl'>{title}</Text>
+          <Text className='text-white text-xl'>⭐ {vote_average}</Text>
+          <Text className='text-white text-xl'>{formattedDate}</Text>
+      </View>
 
     </TouchableOpacity>
     </Link>
